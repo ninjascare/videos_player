@@ -14,6 +14,7 @@ export default class SearchBar extends Component {
 
   handleSubmit = eve => {
     eve.preventDefault();
+    this.props.onTermSubmit(this.state.term);
     // TODO: make sure we call
     // callback from parent Component
   };
